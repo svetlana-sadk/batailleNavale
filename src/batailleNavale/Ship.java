@@ -1,20 +1,23 @@
 package batailleNavale;
 
 public class Ship {
-	int model;
-	String orientation;
-	int coordinates;
+	ShipModel shipModel;
+	Direction direction;
+	String str;
 	
-	public Ship(int model,String orientation,int coordinates){
-
+	
+	public Ship(ShipModel shipModel,Direction direction,String str){
+		this.shipModel = shipModel;
+		this.direction = direction;
+		this.str = str;
 	}
 	
-	public boolean isOnSquare(int coordinates) {
-		
+	public boolean isOnSquare() {
+		throw new UnsupportedOperationException();
 	}
 	
-	public void isSunk() {
-		
+	public boolean isSunk() {
+		throw new UnsupportedOperationException();
 	}
 
 }	
